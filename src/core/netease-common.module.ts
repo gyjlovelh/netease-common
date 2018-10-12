@@ -5,6 +5,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {NormalCoverComponent} from './component/normal-cover/normal-cover.component';
+import {SongListCoverComponent} from './component/song-list-cover/song-list-cover.component';
 
 @NgModule({
     imports: [
@@ -12,8 +14,17 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
         FormsModule,
         ReactiveFormsModule
     ],
-    declarations: [],
-    exports: [],
+    declarations: [
+        NormalCoverComponent,
+        SongListCoverComponent
+    ],
+    exports: [
+        NormalCoverComponent,
+        SongListCoverComponent
+    ],
+    entryComponents: [
+        NormalCoverComponent
+    ],
     providers: []
 })
 

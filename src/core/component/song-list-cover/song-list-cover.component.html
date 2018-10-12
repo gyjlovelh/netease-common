@@ -1,0 +1,18 @@
+<div class="song-list-cover-wrap" *ngIf="songListInfo">
+    <netease-normal-cover
+        [navigateUrl]="songListInfo.navigateUrl"
+        [imageUrl]="songListInfo.imageUrl"
+        [title]="songListInfo.title"
+        [size]="140">
+
+    </netease-normal-cover>
+
+    <p class="dsc">
+        <a [href]="songListInfo.navigateUrl"
+           [title]="songListInfo.title"
+           [class.des-hidden]="breviary">
+            {{songListInfo.title}}
+        </a>
+    </p>
+</div>
+

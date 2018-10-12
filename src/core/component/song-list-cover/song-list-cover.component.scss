@@ -1,0 +1,25 @@
+.song-list-cover-wrap {
+    width: 140px;
+
+    .dsc {
+        margin: 8px 0 3px;
+        font-size: 14px;
+
+        a {
+            display: inline-block;
+            max-width: 100%;
+            vertical-align: middle;
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .des-hidden {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+        }
+    }
+}
