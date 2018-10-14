@@ -8,12 +8,14 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NormalCoverComponent} from './component/normal-cover/normal-cover.component';
 import {SongListCoverComponent} from './component/song-list-cover/song-list-cover.component';
 import {NormalButtonComponent} from './component/normal-button/normal-button.component';
+import {NgZorroAntdModule} from 'ng-zorro-antd';
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        NgZorroAntdModule
     ],
     declarations: [
         NormalCoverComponent,

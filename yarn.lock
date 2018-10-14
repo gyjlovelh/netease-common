@@ -4250,7 +4250,7 @@ ng-packagr@^4.3.0:
 
 ng-zorro-antd@^1.6.0:
   version "1.6.0"
-  resolved "http://registry.npm.taobao.org/ng-zorro-antd/download/ng-zorro-antd-1.6.0.tgz#28e5dd602bf0e59676ec032824e19049046d8999"
+  resolved "http://0.0.0.0:4873/ng-zorro-antd/-/ng-zorro-antd-1.6.0.tgz#28e5dd602bf0e59676ec032824e19049046d8999"
   dependencies:
     "@angular/cdk" "^6.0.0"
     date-fns "^1.29.0"

@@ -1,0 +1,30 @@
+.override {
+    .ant-table-wrapper {
+        border-top: 2px solid #c20c0c;
+        .ant-table {
+            border: 1px solid #e2e2e2;
+            border-radius: 0;
+            table {
+                padding: 0;
+                tr {
+                    &:nth-child(2) {
+                        background: #f7f7f7;
+                        &:hover {
+                            background: #e6e6e6;
+                        }
+                    }
+                    &:hover {
+                        background: #e6e6e6;
+                        td {
+                            background: #e6e6e6;
+                        }
+                    }
+
+                    td {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}

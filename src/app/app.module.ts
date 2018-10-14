@@ -11,12 +11,15 @@ import {NeteaseNormalButtonDemoComponent} from './demos/netease-normal-button-de
 import {PlaybarComponent} from './demos/playbar/playbar.component';
 import {FormsModule} from '@angular/forms';
 import {TableIcnDemoComponent} from './demos/table-icn-demo/table-icn-demo.component';
+import {NgZorroAntdOverrideComponent} from './demos/ng-zorro-antd-override/ng-zorro-antd-override.component';
+import {NgZorroAntdModule} from 'ng-zorro-antd';
 
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
         NeteaseCommonModule,
+        NgZorroAntdModule,
         RouterModule.forRoot(ROUTER_CONFIG)
     ],
     declarations: [
@@ -25,7 +28,8 @@ import {TableIcnDemoComponent} from './demos/table-icn-demo/table-icn-demo.compo
         SongListCoverDemoComponent,
         NeteaseNormalButtonDemoComponent,
         PlaybarComponent,
-        TableIcnDemoComponent
+        TableIcnDemoComponent,
+        NgZorroAntdOverrideComponent
     ],
     providers: [],
     bootstrap: [AppComponent]

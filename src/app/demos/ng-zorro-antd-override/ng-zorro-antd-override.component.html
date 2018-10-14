@@ -1,0 +1,31 @@
+<div style="padding: 10px">
+    <h4>Input:</h4>
+    <input class="override" type="text" nz-input>
+    <h4>Textarea:</h4>
+    <textarea class="override" nz-input rows="6"></textarea>
+    <h4>Radio:</h4>
+    <nz-radio-group class="override">
+        <label nz-radio nzValue="A">A</label>
+        <label nz-radio nzValue="B">B</label>
+        <label nz-radio nzValue="C">C</label>
+        <label nz-radio nzValue="D">D</label>
+    </nz-radio-group>
+    <h4>Select:</h4>
+    <nz-select class="override" style="width: 120px;" [ngModel]="selectData">
+        <nz-option *ngFor="let item of selectList" [nzValue]="item" [nzLabel]="item"></nz-option>
+    </nz-select>
+    <h4>Table:</h4>
+    <nz-table #table
+              class="override"
+              [nzShowPagination]="false"
+              [nzSize]="'small'"
+              [nzData]="dataSet">
+        <tbody>
+            <tr *ngFor="let data of table.data">
+                <td>{{data.name}}</td>
+                <td>{{data.age}}</td>
+                <td>{{data.address}}</td>
+            </tr>
+        </tbody>
+    </nz-table>
+</div>
