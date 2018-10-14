@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+body, textarea, select, input, button {
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    display: inline-block;
+}
+
+em, i {
+    font-style: normal;
+    text-align: left;
+    font-size: inherit;
+}
+
+@import "core/style/style";

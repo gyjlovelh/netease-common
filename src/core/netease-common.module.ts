@@ -7,6 +7,7 @@ import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NormalCoverComponent} from './component/normal-cover/normal-cover.component';
 import {SongListCoverComponent} from './component/song-list-cover/song-list-cover.component';
+import {NormalButtonComponent} from './component/normal-button/normal-button.component';
 
 @NgModule({
     imports: [
@@ -16,14 +17,17 @@ import {SongListCoverComponent} from './component/song-list-cover/song-list-cove
     ],
     declarations: [
         NormalCoverComponent,
-        SongListCoverComponent
+        SongListCoverComponent,
+        NormalButtonComponent
     ],
     exports: [
         NormalCoverComponent,
-        SongListCoverComponent
+        SongListCoverComponent,
+        NormalButtonComponent
     ],
     entryComponents: [
-        NormalCoverComponent
+        NormalCoverComponent,
+        NormalButtonComponent
     ],
     providers: []
 })

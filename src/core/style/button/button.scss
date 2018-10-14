@@ -1,0 +1,225 @@
+
+$btnNormalBgPosition: right -1020px;
+$btnNormalDisabledBgPosition: right -1192px;
+$btnNormalHoverBgPosition: right -1106px;
+
+$btnBg: url("/src/assets/img/button.png") no-repeat 0 9999px;
+$btnBg2: url("/src/assets/img/button2.png") no-repeat 0 9999px;
+
+.netease-button {
+    cursor: default;
+    padding: 0 5px 0 0;
+    white-space: nowrap;
+    float: left;
+    height: 31px;
+    line-height: 30px;
+    min-width: 23px;
+    background: $btnBg2;
+    background-position: $btnNormalBgPosition;
+    &:hover {
+        background-position: $btnNormalHoverBgPosition;
+    }
+
+    &.disabled {
+        background-position: $btnNormalDisabledBgPosition;
+        &:hover {
+            background-position: $btnNormalDisabledBgPosition;
+            i {
+                color: #bebebe;
+                cursor: default;
+            }
+        }
+
+        i {
+            color: #bebebe;
+            cursor: default;
+        }
+    }
+
+    i {
+        background: url("/src/assets/img/button2.png") no-repeat 0 9999px;
+        padding: 0 7px 0 36px;
+        float: left;
+        height: 31px;
+        line-height: 30px;
+        min-width: 23px;
+        cursor: pointer;
+    }
+
+
+    $btnNormalShareBgPosition: 0 -1225px;
+    $btnNormalShareDisabledBgPosition: 0 -1311px;
+    $btnNormalShareHoverBgPosition: 0 -1268px;
+    &.netease-button-share {
+        &:hover {
+            i {
+                background-position: $btnNormalShareHoverBgPosition;
+            }
+        }
+
+        &.disabled {
+            &:hover {
+                i {
+                    background-position: $btnNormalShareDisabledBgPosition;
+                }
+            }
+
+            i {
+                background-position: $btnNormalShareDisabledBgPosition;
+            }
+        }
+
+        i {
+            padding-right: 2px;
+            padding-left: 28px;
+            background-position: $btnNormalShareBgPosition;
+        }
+    }
+
+    $btnNormalLoadBgPosition: 0 -2761px;
+    $btnNormalLoadDisabledBgPosition: 0 -3024px;
+    $btnNormalLoadHoverBgPosition: 0 -2805px;
+    &.netease-button-load {
+        &:hover {
+            i {
+                background-position: $btnNormalLoadHoverBgPosition;
+            }
+        }
+
+        i {
+            padding-right: 2px;
+            padding-left: 28px;
+            background-position: $btnNormalLoadBgPosition;
+        }
+
+        &.disabled {
+            &:hover {
+                i {
+                    background-position: $btnNormalLoadDisabledBgPosition;
+                }
+            }
+
+            i {
+                background-position: $btnNormalLoadDisabledBgPosition;
+            }
+        }
+    }
+
+    $btnNormalCommentBgPosition: 0 -1465px;
+    $btnNormalCommentDisabledBgPosition: 0 -1551px;
+    $btnNormalCommentHoverBgPosition: 0 -1508px;
+    &.netease-button-comment {
+        &:hover {
+            i {
+                background-position: $btnNormalCommentHoverBgPosition;
+            }
+        }
+        &.disabled {
+            &:hover {
+                i {
+                    background-position: $btnNormalCommentDisabledBgPosition;
+                }
+            }
+
+            i {
+                background-position: $btnNormalCommentDisabledBgPosition;
+            }
+        }
+
+        i {
+            padding-right: 2px;
+            padding-left: 28px;
+            background-position: $btnNormalCommentBgPosition;
+        }
+    }
+
+    $btnNormalFavoritesBgPosition: 0 -977px;
+    $btnNormalFavoritesDisabledBgPosition: 0 -1149px;
+    $btnNormalFavoritesHoverBgPosition: 0 -1063px;
+    &.netease-button-favorites {
+        &:hover {
+            i {
+                background-position: $btnNormalFavoritesHoverBgPosition;
+            }
+        }
+
+        i {
+            padding-right: 2px;
+            padding-left: 28px;
+            background-position: $btnNormalFavoritesBgPosition;
+        }
+        &.disabled {
+            &:hover {
+                i {
+                    background-position: $btnNormalFavoritesDisabledBgPosition;
+                }
+            }
+
+            i {
+                background-position: $btnNormalFavoritesDisabledBgPosition;
+            }
+        }
+    }
+
+    &.netease-button-none {
+        color: #333;
+        padding: 0 5px 0 0;
+        background-position: right -100px;
+        &:hover {
+            background-position: right -182px;
+            i {
+                background-position: 0 -141px;
+            }
+        }
+
+        i {
+            color: #333;
+            padding: 0 15px 0 20px;
+            background-position: 0 -59px;
+        }
+    }
+
+    &.netease-button-create {
+        width: 52px;
+        height: 22px;
+        background: $btnBg;
+        background-position: 0 -96px;
+        &:hover {
+            background-position: -94px -39px;
+        }
+
+        i {
+            display: inline-block;
+            line-height: 22px;
+            height: 22px;
+            overflow: hidden;
+            padding-left: 20px;
+            color: #515151;
+            font-size: 12px;
+            font-weight: normal;
+        }
+    }
+
+    &.netease-button-message {
+        background: $btnBg;
+        width: 75px;
+        height: 30px;
+        border-radius: 4px;
+        background-position: 0 -810px;
+
+        &:hover {
+            background-position: 0 -845px;
+        }
+
+        i {
+            display: inline-block;
+            height: 29px;
+            line-height: 29px;
+            padding-left: 30px;
+        }
+
+        &.disabled {
+            background-position: 0 -880px;
+        }
+    }
+}

@@ -28,7 +28,7 @@ export class SongListCoverComponent implements OnChanges {
             // 查询接口
             this.songListInfo = {
                 title: '霜降之时不可追，却知冬至已渐近',
-                imageUrl: 'http://p1.music.126.net/tKBS_Xhu3ZPIA2_EGL9vVg==/109951163374132962.jpg?param=140y140'
+                imageUrl: 'http://p2.music.126.net/VOkaqB9WaR5F4XWfA6-B7g==/109951163596455485.jpg?param=140y140'
             }
         }
     }
