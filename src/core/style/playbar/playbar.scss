@@ -10,6 +10,14 @@
     cursor: pointer;
     background-image: url("/src/assets/img/playbar.png");
 
+    &.bg {
+        height: 53px;
+        width: 100%;
+        zoom: 1;
+        background-position: 0 0;
+        background-repeat: repeat-x;
+    }
+
     &.playbar-prev {
         background-position: 0 -130px;
         &:hover {

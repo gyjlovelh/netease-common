@@ -2,7 +2,7 @@
  * Created by guanyj on  2018/10/14
  */
 import {Component, Input} from '@angular/core';
-import {BtnTypeEnum} from '../enum/btn-type.enum';
+import {BtnTypeEnum} from '../../enum/btn-type.enum';
 
 @Component({
     selector: 'netease-normal-button',

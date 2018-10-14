@@ -5,4 +5,7 @@
 
 export * from './core/netease-common.module';
 
+/** enum */
+export * from './core/enum/btn-type.enum';
+
 
