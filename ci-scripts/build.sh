@@ -5,6 +5,7 @@ bash ~/Documents/angular6/netease-theme/ci-scripts/build.sh
 
 cd ~/Documents/angular6/netease-common/
 # 升级netease-theme工程依赖
+npm config set registry http://0.0.0.0:4873/
 npm run upgrade
 if [ $? == 0 ]
 then echo "升级theme版本成功!"
@@ -14,6 +15,8 @@ exit
 fi
 
 # 安装依赖
+npm config set registry http://registry.npm.taobao.org
+yarn config set registry http://registry.npm.taobao.org
 yarn
 if [ $? == 0 ]
 then echo "安装成功!"
