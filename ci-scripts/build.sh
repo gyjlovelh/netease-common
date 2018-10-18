@@ -2,7 +2,8 @@
 
 # 执行netease-theme的build脚本
 path = ~/Documents/angular6
-bash ${path}/netease-theme/ci-scripts/build.sh
+cd ${path}/netease-theme/ci-scripts
+bash build.sh
 
 cd ${path}/netease-common
 # 升级netease-theme工程依赖
@@ -28,8 +29,8 @@ npm version patch
 if [ $? == 0 ]
 then echo "版本升级成功!"
 else
-echo "版本升级失败!"
-exit
+git commit -a -m "neteae-common auto commit"
+echo "neteae-common auto commit!"
 fi
 
 # 打包
