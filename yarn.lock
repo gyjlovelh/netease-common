@@ -263,9 +263,9 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@netease/theme@~0.0.0":
-  version "0.0.15"
-  resolved "http://0.0.0.0:4873/@netease%2ftheme/-/theme-0.0.15.tgz#fa6b8fc8cfaef9b7a454eca4c9ff77b0e4422cbb"
+"@netease/theme@^1.0.0":
+  version "1.0.7"
+  resolved "http://0.0.0.0:4873/@netease%2ftheme/-/theme-1.0.7.tgz#48af805ac6163e2781630dd38ae0af2e92b68c9c"
 
 "@ngtools/json-schema@^1.1.0":
   version "1.1.0"
