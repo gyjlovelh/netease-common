@@ -14,13 +14,13 @@ exit
 fi
 
 # 安装依赖
-# yarn
-#if [ $? == 0 ]
-#then echo "安装成功!"
-#else
-#git commit -m 'auto commit'
-#git push origin master
-#fi
+yarn
+if [ $? == 0 ]
+then echo "安装成功!"
+else
+git commit -m 'auto commit'
+git push origin master
+fi
 
 # 升级版本
 npm version patch
