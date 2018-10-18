@@ -4,6 +4,7 @@
 
 
 import {Component} from '@angular/core';
+import {NzModalService} from 'ng-zorro-antd';
 
 @Component({
     selector: 'netease-zorro-demo',
@@ -21,7 +22,9 @@ export class NgZorroAntdOverrideComponent {
 
     sugg: string;
 
-    constructor() {
+    constructor(
+        private $model: NzModalService
+    ) {
         this.dataSet = [
             {
                 key    : '1',
@@ -47,4 +50,15 @@ export class NgZorroAntdOverrideComponent {
             '@guanyj', 'love', 'amor', 'haha', 'wuyulong', 'liubei'
         ];
     }
+
+    handleOpenModal() {
+        this.$model.create({
+            nzTitle: 'Modal Title',
+            nzContent: 'string, will close after 1 sec',
+            nzClosable: false,
+            nzMask: false,
+            nzClassName: 'override'
+        });
+    }
+
 }

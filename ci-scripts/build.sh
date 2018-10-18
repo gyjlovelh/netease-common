@@ -1,15 +1,27 @@
 #!/usr/bin/env bash
 
-cd ../
+# 执行netease-theme的build脚本
+path = ~/Documents/angular6
+bash ${path}/netease-theme/ci-scripts/build.sh
+
+cd ${path}/netease-common
+# 升级netease-theme工程依赖
+npm run upgrade
+if [ $? == 0 ]
+then echo "升级theme版本成功!"
+else
+echo "升级theme版本失败!"
+exit
+fi
 
 # 安装依赖
 # yarn
-if [ $? == 0 ]
-then echo "安装成功!"
-else
-git commit -m 'auto commit'
-git push origin master
-fi
+#if [ $? == 0 ]
+#then echo "安装成功!"
+#else
+#git commit -m 'auto commit'
+#git push origin master
+#fi
 
 # 升级版本
 npm version patch
