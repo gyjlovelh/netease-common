@@ -28,4 +28,14 @@
             </tr>
         </tbody>
     </nz-table>
+    <h4>@提及</h4>
+    <nz-mention
+        class="override"
+        [nzSuggestions]="suggestions">
+        <input
+            class="override"
+            nz-input
+            nzMentionTrigger
+            [(ngModel)]="sugg">
+    </nz-mention>
 </div>

@@ -17,6 +17,10 @@ export class NgZorroAntdOverrideComponent {
 
     dataSet: any[];
 
+    suggestions: string[];
+
+    sugg: string;
+
     constructor() {
         this.dataSet = [
             {
@@ -37,6 +41,10 @@ export class NgZorroAntdOverrideComponent {
                 age    : 32,
                 address: 'Sidney No. 1 Lake Park'
             }
+        ];
+
+        this.suggestions = [
+            '@guanyj', 'love', 'amor', 'haha', 'wuyulong', 'liubei'
         ];
     }
 }

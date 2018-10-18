@@ -9,12 +9,14 @@ import {NormalCoverComponent} from './component/normal-cover/normal-cover.compon
 import {SongListCoverComponent} from './component/song-list-cover/song-list-cover.component';
 import {NormalButtonComponent} from './component/normal-button/normal-button.component';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
+        BrowserAnimationsModule,
         NgZorroAntdModule
     ],
     declarations: [
