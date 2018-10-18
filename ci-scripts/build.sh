@@ -2,9 +2,9 @@
 
 # 执行netease-theme的build脚本
 path = ~/Documents/angular6
-bash ${path}/netease-theme/ci-scripts/build.sh
+bash $path/netease-theme/ci-scripts/build.sh
 
-cd ${path}/netease-common
+cd $path/netease-common
 # 升级netease-theme工程依赖
 npm run upgrade
 if [ $? == 0 ]
