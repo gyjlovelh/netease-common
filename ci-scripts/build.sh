@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
 # 执行netease-theme的build脚本
-export pathName=/Documents/angular6
-echo "this is path:" ${pathName}
-bash  ~/Documents/angular6/netease-theme/ci-scripts/build.sh
+bash ~/Documents/angular6/netease-theme/ci-scripts/build.sh
 
 #
 #cd $path/netease-common
