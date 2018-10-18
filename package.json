@@ -1,6 +1,6 @@
 {
     "name": "@netease/common",
-    "version": "0.0.7",
+    "version": "1.0.0",
     "scripts": {
         "ng": "ng",
         "start:demo": "ng serve --port 4199",
@@ -9,6 +9,7 @@
         "upgrade:save": "yarn add @netease/theme@latest",
         "package": "ng-packagr -p ng-package.json",
         "jinkens": "bash ci-scripts/build.sh",
+        "jinkens:dev": "bash ci-scripts/build-dev.sh",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
