@@ -14,6 +14,7 @@ fi
 # 安装依赖
 npm config set registry http://registry.npm.taobao.org
 yarn config set registry http://registry.npm.taobao.org
+yarn clean
 yarn
 if [ $? == 0 ]
 then echo "安装成功!"
