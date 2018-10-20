@@ -29,6 +29,12 @@ then echo "版本升级成功!"
 else
 git commit -a -m "neteae-common auto commit"
 echo "neteae-common auto commit!"
+npm version patch
+if [ $? == 0 ]
+then echo "版本升级成功!"
+else
+echo "版本升级失败"
+fi
 fi
 
 # 打包
