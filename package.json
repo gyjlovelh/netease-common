@@ -1,6 +1,6 @@
 {
     "name": "@netease/common",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "scripts": {
         "ng": "ng",
         "start:demo": "ng serve --port 4199",
