@@ -13,10 +13,11 @@ import {FormsModule} from '@angular/forms';
 import {TableIcnDemoComponent} from './demos/table-icn-demo/table-icn-demo.component';
 import {NgZorroAntdOverrideComponent} from './demos/ng-zorro-antd-override/ng-zorro-antd-override.component';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
     imports: [
-        BrowserModule,
+        BrowserAnimationsModule,
         FormsModule,
         NeteaseCommonModule,
         NgZorroAntdModule,
