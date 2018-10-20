@@ -16,6 +16,8 @@ npm config set registry http://registry.npm.taobao.org
 yarn config set registry http://registry.npm.taobao.org
 yarn cache clean
 yarn
+
+# 解决 upgrade theme后会删除@angular的某些包
 yarn upgrade @angular
 if [ $? == 0 ]
 then echo "安装成功!"
