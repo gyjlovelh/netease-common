@@ -16,6 +16,7 @@ npm config set registry http://registry.npm.taobao.org
 yarn config set registry http://registry.npm.taobao.org
 yarn cache clean
 yarn
+yarn upgrade @angular
 if [ $? == 0 ]
 then echo "安装成功!"
 else
@@ -43,7 +44,7 @@ npm run package
 if [ $? == 0 ]
 then echo "打包成功!"
 else
-echo "npm run package failed!"
+echo "打包失败"
 exit
 fi
 
@@ -52,7 +53,7 @@ npm publish dist
 if [ $? == 0 ]
 then echo "发布成功!"
 else
-echo "npm publish dist failed!"
+echo "发布失败"
 exit
 fi
 
