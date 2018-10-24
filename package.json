@@ -3,7 +3,7 @@
     "version": "1.0.12",
     "scripts": {
         "ng": "ng",
-        "start:demo": "ng serve --port 4199",
+        "start:demo": "ng serve --port 4199 --aot",
         "build": "ng build --prod --sourcemaps",
         "upgrade": "npm update @netease/theme --no-save",
         "upgrade:save": "yarn add @netease/theme@latest",
