@@ -3,7 +3,8 @@
     "version": "1.0.13",
     "scripts": {
         "ng": "ng",
-        "start:demo": "ng serve --port 4199 --aot",
+        "start:demo": "ng serve --port 4199",
+        "start:prod": "ng serve --port 14199 --prod",
         "build": "ng build --prod --sourcemaps",
         "upgrade": "npm update @netease/theme --no-save",
         "upgrade:save": "yarn add @netease/theme@latest",
@@ -28,6 +29,7 @@
         "@netease/theme": "^1.0.0",
         "core-js": "^2.5.4",
         "ng-zorro-antd": "^1.6.0",
+        "reflect-metadata": "^0.1.12",
         "rxjs": "^6.0.0",
         "zone.js": "~0.8.26"
     },

@@ -20,7 +20,7 @@ export class LocalStorageService {
 
     /**
      * 移除
-     * @param {string} key
+     * param {string} key
      */
     remove(key: string) {
         localStorage.removeItem(`${this.prefix}${this.separator}${key}`);

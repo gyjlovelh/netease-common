@@ -10,29 +10,45 @@ import {SongListCoverComponent} from './component/song-list-cover/song-list-cove
 import {NormalButtonComponent} from './component/normal-button/normal-button.component';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {LocalStorageService} from './service/local-storage/local-stotage.service';
+import {UnitPipe} from './pipe/unit.pipe';
+import {UrlDemoService} from './service/url-demo.service';
+import {HttpModule} from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
+import {ProxyService} from './service/proxy.service';
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
+        HttpClientModule,
         ReactiveFormsModule,
         NgZorroAntdModule
     ],
     declarations: [
         NormalCoverComponent,
         SongListCoverComponent,
-        NormalButtonComponent
+        NormalButtonComponent,
+
+        UnitPipe
+
     ],
     exports: [
         NormalCoverComponent,
         SongListCoverComponent,
-        NormalButtonComponent
+        NormalButtonComponent,
+
+        UnitPipe
     ],
     entryComponents: [
         NormalCoverComponent,
         NormalButtonComponent
     ],
-    providers: []
+    providers: [
+        LocalStorageService,
+        UrlDemoService,
+        ProxyService
+    ]
 })
 
 export class NeteaseCommonModule { }
